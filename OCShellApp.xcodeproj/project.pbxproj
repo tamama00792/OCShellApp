@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		49FD02DF2B9F02CD00F66DA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02DE2B9F02CD00F66DA8 /* AppDelegate.m */; };
 		49FD02E22B9F02CD00F66DA8 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02E12B9F02CD00F66DA8 /* SceneDelegate.m */; };
-		49FD02E52B9F02CD00F66DA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02E42B9F02CD00F66DA8 /* ViewController.m */; };
-		49FD02E82B9F02CD00F66DA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FD02E62B9F02CD00F66DA8 /* Main.storyboard */; };
 		49FD02EA2B9F02CE00F66DA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49FD02E92B9F02CE00F66DA8 /* Assets.xcassets */; };
 		49FD02ED2B9F02CE00F66DA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49FD02EB2B9F02CE00F66DA8 /* LaunchScreen.storyboard */; };
 		49FD02F02B9F02CE00F66DA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02EF2B9F02CE00F66DA8 /* main.m */; };
+		49FD02F82B9F042D00F66DA8 /* OCShellTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02F72B9F042D00F66DA8 /* OCShellTabBarController.m */; };
+		49FD02FB2B9F044A00F66DA8 /* OCShellObjectiveCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02FA2B9F044A00F66DA8 /* OCShellObjectiveCViewController.m */; };
+		49FD02FF2B9F046900F66DA8 /* OCShellSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02FE2B9F046900F66DA8 /* OCShellSwiftViewController.swift */; };
+		49FD03022B9F04D800F66DA8 /* OCShellOCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD03012B9F04D800F66DA8 /* OCShellOCUtils.m */; };
+		49FD03052B9F04F100F66DA8 /* OCShellSwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD03042B9F04F100F66DA8 /* OCShellSwiftUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		49FD02DE2B9F02CD00F66DA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		49FD02E02B9F02CD00F66DA8 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		49FD02E12B9F02CD00F66DA8 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		49FD02E32B9F02CD00F66DA8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		49FD02E42B9F02CD00F66DA8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		49FD02E72B9F02CD00F66DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49FD02E92B9F02CE00F66DA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49FD02EC2B9F02CE00F66DA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49FD02EE2B9F02CE00F66DA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49FD02EF2B9F02CE00F66DA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49FD02F62B9F042D00F66DA8 /* OCShellTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCShellTabBarController.h; sourceTree = "<group>"; };
+		49FD02F72B9F042D00F66DA8 /* OCShellTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCShellTabBarController.m; sourceTree = "<group>"; };
+		49FD02F92B9F044A00F66DA8 /* OCShellObjectiveCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCShellObjectiveCViewController.h; sourceTree = "<group>"; };
+		49FD02FA2B9F044A00F66DA8 /* OCShellObjectiveCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCShellObjectiveCViewController.m; sourceTree = "<group>"; };
+		49FD02FD2B9F046900F66DA8 /* OCShellApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCShellApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		49FD02FE2B9F046900F66DA8 /* OCShellSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCShellSwiftViewController.swift; sourceTree = "<group>"; };
+		49FD03002B9F04D800F66DA8 /* OCShellOCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCShellOCUtils.h; sourceTree = "<group>"; };
+		49FD03012B9F04D800F66DA8 /* OCShellOCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCShellOCUtils.m; sourceTree = "<group>"; };
+		49FD03042B9F04F100F66DA8 /* OCShellSwiftUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCShellSwiftUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,15 +74,37 @@
 				49FD02DE2B9F02CD00F66DA8 /* AppDelegate.m */,
 				49FD02E02B9F02CD00F66DA8 /* SceneDelegate.h */,
 				49FD02E12B9F02CD00F66DA8 /* SceneDelegate.m */,
-				49FD02E32B9F02CD00F66DA8 /* ViewController.h */,
-				49FD02E42B9F02CD00F66DA8 /* ViewController.m */,
-				49FD02E62B9F02CD00F66DA8 /* Main.storyboard */,
 				49FD02E92B9F02CE00F66DA8 /* Assets.xcassets */,
 				49FD02EB2B9F02CE00F66DA8 /* LaunchScreen.storyboard */,
 				49FD02EE2B9F02CE00F66DA8 /* Info.plist */,
 				49FD02EF2B9F02CE00F66DA8 /* main.m */,
+				49FD02FC2B9F044E00F66DA8 /* Controllers */,
+				49FD03032B9F04DB00F66DA8 /* Utils */,
 			);
 			path = OCShellApp;
+			sourceTree = "<group>";
+		};
+		49FD02FC2B9F044E00F66DA8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49FD02F62B9F042D00F66DA8 /* OCShellTabBarController.h */,
+				49FD02F72B9F042D00F66DA8 /* OCShellTabBarController.m */,
+				49FD02F92B9F044A00F66DA8 /* OCShellObjectiveCViewController.h */,
+				49FD02FA2B9F044A00F66DA8 /* OCShellObjectiveCViewController.m */,
+				49FD02FE2B9F046900F66DA8 /* OCShellSwiftViewController.swift */,
+				49FD02FD2B9F046900F66DA8 /* OCShellApp-Bridging-Header.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49FD03032B9F04DB00F66DA8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				49FD03002B9F04D800F66DA8 /* OCShellOCUtils.h */,
+				49FD03012B9F04D800F66DA8 /* OCShellOCUtils.m */,
+				49FD03042B9F04F100F66DA8 /* OCShellSwiftUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +138,7 @@
 				TargetAttributes = {
 					49FD02D92B9F02CD00F66DA8 = {
 						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 					};
 				};
 			};
@@ -135,7 +167,6 @@
 			files = (
 				49FD02ED2B9F02CE00F66DA8 /* LaunchScreen.storyboard in Resources */,
 				49FD02EA2B9F02CE00F66DA8 /* Assets.xcassets in Resources */,
-				49FD02E82B9F02CD00F66DA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,9 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49FD02E52B9F02CD00F66DA8 /* ViewController.m in Sources */,
 				49FD02DF2B9F02CD00F66DA8 /* AppDelegate.m in Sources */,
+				49FD03052B9F04F100F66DA8 /* OCShellSwiftUtils.swift in Sources */,
+				49FD02FB2B9F044A00F66DA8 /* OCShellObjectiveCViewController.m in Sources */,
+				49FD02F82B9F042D00F66DA8 /* OCShellTabBarController.m in Sources */,
+				49FD03022B9F04D800F66DA8 /* OCShellOCUtils.m in Sources */,
 				49FD02F02B9F02CE00F66DA8 /* main.m in Sources */,
+				49FD02FF2B9F046900F66DA8 /* OCShellSwiftViewController.swift in Sources */,
 				49FD02E22B9F02CD00F66DA8 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		49FD02E62B9F02CD00F66DA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				49FD02E72B9F02CD00F66DA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		49FD02EB2B9F02CE00F66DA8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,6 +317,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G5HUH99PBY;
@@ -297,7 +325,6 @@
 				INFOPLIST_FILE = OCShellApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,6 +335,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.satori.OCShellApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OCShellApp/Controllers/OCShellApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,6 +347,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G5HUH99PBY;
@@ -324,7 +355,6 @@
 				INFOPLIST_FILE = OCShellApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -335,6 +365,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.satori.OCShellApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "OCShellApp/Controllers/OCShellApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
