@@ -6,7 +6,7 @@
 //
 
 #import "OCShellTabBarController.h"
-// 在壳工程内，OC调用Swift需要用到此头文件。对应配置位置在【Build Settings】->【Swift Compiler - General】->【Objective-C Generated Interface Header Name】。在OC工程内创建Swift文件时会自动生成此配置。
+
 #import "OCShellApp-Swift.h"
 
 #import "OCShellObjectiveCViewController.h"

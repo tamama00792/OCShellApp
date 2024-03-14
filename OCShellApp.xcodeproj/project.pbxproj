@@ -17,9 +17,11 @@
 		49FD02FF2B9F046900F66DA8 /* OCShellSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02FE2B9F046900F66DA8 /* OCShellSwiftViewController.swift */; };
 		49FD03022B9F04D800F66DA8 /* OCShellOCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD03012B9F04D800F66DA8 /* OCShellOCUtils.m */; };
 		49FD03052B9F04F100F66DA8 /* OCShellSwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD03042B9F04F100F66DA8 /* OCShellSwiftUtils.swift */; };
+		97A99C2FD1286139B8000CB8 /* Pods_OCShellApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1367267D1C3CD9A388B521E8 /* Pods_OCShellApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1367267D1C3CD9A388B521E8 /* Pods_OCShellApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCShellApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FD02DA2B9F02CD00F66DA8 /* OCShellApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCShellApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FD02DD2B9F02CD00F66DA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49FD02DE2B9F02CD00F66DA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		49FD03002B9F04D800F66DA8 /* OCShellOCUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCShellOCUtils.h; sourceTree = "<group>"; };
 		49FD03012B9F04D800F66DA8 /* OCShellOCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCShellOCUtils.m; sourceTree = "<group>"; };
 		49FD03042B9F04F100F66DA8 /* OCShellSwiftUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCShellSwiftUtils.swift; sourceTree = "<group>"; };
+		ABFE239F6F242B139119E08B /* Pods-OCShellApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCShellApp.debug.xcconfig"; path = "Target Support Files/Pods-OCShellApp/Pods-OCShellApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D53CAFC6D3DDC028A4DD782F /* Pods-OCShellApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCShellApp.release.xcconfig"; path = "Target Support Files/Pods-OCShellApp/Pods-OCShellApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +49,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97A99C2FD1286139B8000CB8 /* Pods_OCShellApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		138FDF0C64EDDDA0C89A03F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1367267D1C3CD9A388B521E8 /* Pods_OCShellApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		49FD02D12B9F02CD00F66DA8 = {
 			isa = PBXGroup;
 			children = (
 				49FD02DC2B9F02CD00F66DA8 /* OCShellApp */,
 				49FD02DB2B9F02CD00F66DA8 /* Products */,
+				B4B05518319FD15DA3C0BB63 /* Pods */,
+				138FDF0C64EDDDA0C89A03F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +122,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		B4B05518319FD15DA3C0BB63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABFE239F6F242B139119E08B /* Pods-OCShellApp.debug.xcconfig */,
+				D53CAFC6D3DDC028A4DD782F /* Pods-OCShellApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 49FD02F32B9F02CE00F66DA8 /* Build configuration list for PBXNativeTarget "OCShellApp" */;
 			buildPhases = (
+				A29E33AE59CF16304F607424 /* [CP] Check Pods Manifest.lock */,
 				49FD02D62B9F02CD00F66DA8 /* Sources */,
 				49FD02D72B9F02CD00F66DA8 /* Frameworks */,
 				49FD02D82B9F02CD00F66DA8 /* Resources */,
+				5DA851BC4CFD4D6BCF246C4A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,6 +198,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DA851BC4CFD4D6BCF246C4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCShellApp/Pods-OCShellApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCShellApp/Pods-OCShellApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCShellApp/Pods-OCShellApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A29E33AE59CF16304F607424 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCShellApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		49FD02D62B9F02CD00F66DA8 /* Sources */ = {
@@ -314,6 +383,7 @@
 		};
 		49FD02F42B9F02CE00F66DA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABFE239F6F242B139119E08B /* Pods-OCShellApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -344,6 +414,7 @@
 		};
 		49FD02F52B9F02CE00F66DA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D53CAFC6D3DDC028A4DD782F /* Pods-OCShellApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
