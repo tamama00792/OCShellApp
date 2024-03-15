@@ -8,6 +8,11 @@ target 'OCShellApp' do
   use_frameworks!
 
   # Pods for OCShellApp
- # pod 'SwiftMixObjectiveCModule', :path => '../SwiftMixObjectiveCModule'
+#  pod 'SwiftMixObjectiveCModule', :path => '../SwiftMixObjectiveCModule'
   pod 'SwiftMixObjectiveCModule', :git => 'git@github.com:tamama00792/SwiftMixObjectiveCModule.git', :branch => 'develop'
+#  pod 'SwiftModule', :path => '../SwiftModule'
+  pod 'SwiftModule', :git => 'git@github.com:tamama00792/SwiftModule.git', :branch => 'develop'
+#  pod 'ObjectiveCModule', :path => '../ObjectiveCModule'
+  pod 'ObjectiveCModule', :git => 'git@github.com:tamama00792/ObjectiveCModule.git', :branch => 'develop'
 end
+

@@ -74,6 +74,7 @@
     [caller logSwiftUtilInsideSamePod];
 }
 
+// 在不同pod内，OC调用Swift需要用到头文件XXX-Swift.h。对应配置位置在【Build Settings】->【Swift Compiler - General】->【Objective-C Generated Interface Header Name】。Cocoapods里有Swift文件时会自动生成此配置。
 - (void)logSwiftUtilBetweenPods {
     [SMOSwiftMethodCaller logSwiftUtilInsideSamePod];
     SMOSwiftMethodCaller *caller = [SMOSwiftMethodCaller new];
