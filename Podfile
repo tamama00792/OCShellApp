@@ -3,6 +3,8 @@
 
 target 'OCShellApp' do
   # Comment the next line if you don't want to use dynamic frameworks
+  # 如果不添加这句话，那么组件内OC调用Swift必须要使用#import "XXX-Swift.h"的形式引用，而不是#import <XXX/XXX-Swift.h>的形式引用。
+  # 且组件间OC调用Swift必须要用@XXX的形式引用
   use_frameworks!
 
   # Pods for OCShellApp

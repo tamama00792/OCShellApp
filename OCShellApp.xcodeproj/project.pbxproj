@@ -17,11 +17,10 @@
 		49FD02FF2B9F046900F66DA8 /* OCShellSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD02FE2B9F046900F66DA8 /* OCShellSwiftViewController.swift */; };
 		49FD03022B9F04D800F66DA8 /* OCShellOCUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 49FD03012B9F04D800F66DA8 /* OCShellOCUtils.m */; };
 		49FD03052B9F04F100F66DA8 /* OCShellSwiftUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FD03042B9F04F100F66DA8 /* OCShellSwiftUtils.swift */; };
-		97A99C2FD1286139B8000CB8 /* Pods_OCShellApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1367267D1C3CD9A388B521E8 /* Pods_OCShellApp.framework */; };
+		D9A65179B173D186C75FA022 /* Pods_OCShellApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B52AE8312B3CD136CA60194C /* Pods_OCShellApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1367267D1C3CD9A388B521E8 /* Pods_OCShellApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCShellApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FD02DA2B9F02CD00F66DA8 /* OCShellApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCShellApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49FD02DD2B9F02CD00F66DA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		49FD02DE2B9F02CD00F66DA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		49FD03012B9F04D800F66DA8 /* OCShellOCUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCShellOCUtils.m; sourceTree = "<group>"; };
 		49FD03042B9F04F100F66DA8 /* OCShellSwiftUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCShellSwiftUtils.swift; sourceTree = "<group>"; };
 		ABFE239F6F242B139119E08B /* Pods-OCShellApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCShellApp.debug.xcconfig"; path = "Target Support Files/Pods-OCShellApp/Pods-OCShellApp.debug.xcconfig"; sourceTree = "<group>"; };
+		B52AE8312B3CD136CA60194C /* Pods_OCShellApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCShellApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D53CAFC6D3DDC028A4DD782F /* Pods-OCShellApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCShellApp.release.xcconfig"; path = "Target Support Files/Pods-OCShellApp/Pods-OCShellApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97A99C2FD1286139B8000CB8 /* Pods_OCShellApp.framework in Frameworks */,
+				D9A65179B173D186C75FA022 /* Pods_OCShellApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 		138FDF0C64EDDDA0C89A03F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1367267D1C3CD9A388B521E8 /* Pods_OCShellApp.framework */,
+				B52AE8312B3CD136CA60194C /* Pods_OCShellApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,7 +143,7 @@
 				49FD02D62B9F02CD00F66DA8 /* Sources */,
 				49FD02D72B9F02CD00F66DA8 /* Frameworks */,
 				49FD02D82B9F02CD00F66DA8 /* Resources */,
-				5DA851BC4CFD4D6BCF246C4A /* [CP] Embed Pods Frameworks */,
+				7E2BB92D054F71CF899C8311 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,7 +200,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5DA851BC4CFD4D6BCF246C4A /* [CP] Embed Pods Frameworks */ = {
+		7E2BB92D054F71CF899C8311 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (

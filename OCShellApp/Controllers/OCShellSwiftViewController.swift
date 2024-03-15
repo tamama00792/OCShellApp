@@ -42,35 +42,38 @@ class OCShellSwiftViewController: UIViewController {
         }
     }
     
-    @objc func logOCUtil(_ button:UIButton) {
+    @objc func logObjCUtil(_ button:UIButton) {
         switch button.tag {
         case 10000:
-            logSwiftUtilInsideSameProject()
+            logObjCUtilInsideSameProject()
         case 10001:
-            logSwiftUtilInsideSamePod()
+            logObjCUtilInsideSamePod()
         case 10002:
-            logSwiftUtilBetweenPods()
+            logObjCUtilBetweenPods()
         default:
             break
         }
     }
     
     // 在壳工程内，Swift调用OC需要用到头文件XXX-Bridging-Header.h，并在里面引用需要被调用的OC文件。对应配置位置在【Build Settings】->【Swift Compiler - General】->【Objective-C Bridging Header】。在OC工程内创建Swift文件时会自动生成此配置。
-    func logSwiftUtilInsideSameProject (){
+    func logObjCUtilInsideSameProject (){
         let info = "from \(#file)"
         OCShellOCUtils.logClassMethod(info)
         let util = OCShellOCUtils()
         util.logInstanceMethod(info)
     }
     
-    // 在同一个pod内，Swift调用OC需要用到在XXX-umbrella.h头文件中，并在里面引用需要被调用的OC文件；另外还需要配置Defines Module为YES，位置在【Build Settings】->【Packaging】。当工程内同时有Swift和OC文件时，Cocoapods会自动生成此配置。
-    func logSwiftUtilInsideSamePod (){
-        SMOObjeciveCMethodCaller.logSwiftUtilInsideSamePod()
+    /*
+     * 在同一个pod内，Swift调用OC需要用到在XXX-umbrella.h头文件中，并在里面引用需要被调用的OC文件。当工程内同时有Swift和OC文件时，Cocoapods会自动生成此配置。
+     * 另外还需要配置Defines Module为YES，位置在【Build Settings】->【Packaging】。当podfile里标注了use_frameworks!时会生成此配置
+     */
+    func logObjCUtilInsideSamePod (){
+        SMOObjeciveCMethodCaller.logObjCUtilInsideSamePod()
         let caller = SMOObjeciveCMethodCaller()
-        caller.logSwiftUtilInsideSamePod()
+        caller.logObjCUtilInsideSamePod()
     }
     
-    func logSwiftUtilBetweenPods (){
+    func logObjCUtilBetweenPods (){
         
     }
 
