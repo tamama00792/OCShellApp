@@ -9,7 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface OCShellOCUtils : NSObject
+/// 主工程内调用OC方法的工具类
+@interface OCShellObjectiveCUtils : NSObject
 
 + (void)logClassMethod:(NSString *)info;
 

@@ -3,6 +3,6 @@
 //
 
 // 在这里声明给Swift用的OC文件
-#import "OCShellOCUtils.h"
+#import "OCShellObjectiveCUtils.h"
 
 #import <SwiftMixObjectiveCModule/SwiftMixObjectiveCModule-Swift.h>

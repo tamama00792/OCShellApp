@@ -75,7 +75,9 @@
 }
 
 - (void)logSwiftUtilBetweenPods {
-
+    [SMOSwiftMethodCaller logSwiftUtilInsideSamePod];
+    SMOSwiftMethodCaller *caller = [SMOSwiftMethodCaller new];
+    [caller logSwiftUtilInsideSamePod];
 }
 
 /*

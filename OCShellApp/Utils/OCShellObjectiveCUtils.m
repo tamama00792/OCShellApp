@@ -5,9 +5,9 @@
 //  Created by 徐冰 on 2024/3/11.
 //
 
-#import "OCShellOCUtils.h"
+#import "OCShellObjectiveCUtils.h"
 
-@implementation OCShellOCUtils
+@implementation OCShellObjectiveCUtils
 
 + (void)logClassMethod:(NSString *)info {
     NSLog(@"%s:%@",__func__,info);

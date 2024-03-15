@@ -7,7 +7,7 @@
 
 import Foundation
 
-// 只有继承NSObject的类可以被OC调用
+/// 主工程内调用Swift方法的工具类（只有继承NSObject的类可以被OC调用）
 class OCShellSwiftUtils : NSObject {
     @objc class func logClassMethod(_ info:String) {
         print("\(#function) \(info)")

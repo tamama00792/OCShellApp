@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// Swift容器页面
 class OCShellSwiftViewController: UIViewController {
     
     required init() {
@@ -34,7 +35,7 @@ class OCShellSwiftViewController: UIViewController {
         for (index,title) in titles.enumerated() {
             let ocButton = UIButton(type: .system)
             ocButton.setTitle(title, for: .normal)
-            ocButton.addTarget(self, action: #selector(self.logOCUtil(_:)), for: .touchUpInside)
+            ocButton.addTarget(self, action: #selector(self.logObjCUtil(_:)), for: .touchUpInside)
             ocButton.tag = 10000 + index
             view.addSubview(ocButton)
             ocButton.frame = CGRect(x: 0, y: 0, width: 200, height: 30)
@@ -58,8 +59,8 @@ class OCShellSwiftViewController: UIViewController {
     // 在壳工程内，Swift调用OC需要用到头文件XXX-Bridging-Header.h，并在里面引用需要被调用的OC文件。对应配置位置在【Build Settings】->【Swift Compiler - General】->【Objective-C Bridging Header】。在OC工程内创建Swift文件时会自动生成此配置。
     func logObjCUtilInsideSameProject (){
         let info = "from \(#file)"
-        OCShellOCUtils.logClassMethod(info)
-        let util = OCShellOCUtils()
+        OCShellObjectiveCUtils.logClassMethod(info)
+        let util = OCShellObjectiveCUtils()
         util.logInstanceMethod(info)
     }
     
@@ -74,7 +75,9 @@ class OCShellSwiftViewController: UIViewController {
     }
     
     func logObjCUtilBetweenPods (){
-        
+        SMOObjeciveCMethodCaller.logObjCUtilBetweenPods()
+        let caller = SMOObjeciveCMethodCaller()
+        caller.logObjCUtilBetweenPods()
     }
 
     /*
